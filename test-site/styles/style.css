@@ -1,0 +1,30 @@
+html {
+background-color: #00539F
+}
+
+h1{
+text-align: center;
+color: black;
+font-size: 60px;
+}
+
+
+p {
+	color: black;
+font-size: 20px;
+
+  }
+
+body {
+width: 1100px;
+margin: 60px auto;
+background-color: #FF2500;
+padding: 0 20px 20px 20px;
+border: 5px solid blue;
+}
+
+
+img {
+display: block;
+margin: 0 auto;
+}
