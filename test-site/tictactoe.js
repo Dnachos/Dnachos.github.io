@@ -1,4 +1,2 @@
-ctx.beginPath();
-ctx.moveTo(50, 50);
-ctx.lineTo(100, 100);
-ctx.stroke();
+ ctx.fillStyle = 'green';
+ctx.fillRect(10, 10, 100, 100);
