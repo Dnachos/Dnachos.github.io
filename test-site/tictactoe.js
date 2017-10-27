@@ -14,6 +14,6 @@ ctx.lineTo(300, 100);
 ctx.moveTo(0, 200);
 ctx.lineTo(300,200 );
 
-ctx.movetTo(100,50);
+ctx.moveTo(100,50);
 ctx.arc(50,50,50,0, 2*Math.PI);
 ctx.stroke();
