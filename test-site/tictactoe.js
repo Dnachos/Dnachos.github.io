@@ -5,6 +5,7 @@ ctx.beginPath();
 ctx.moveTo(100, 100);
 ctx.lineTo(100, 100);
 ctx.stroke();
+ctx.fill();
 
 ctx.beginPath();
 ctx.moveTo(200, 200);
