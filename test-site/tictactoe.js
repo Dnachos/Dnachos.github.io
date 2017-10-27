@@ -8,8 +8,8 @@ ctx.stroke();
 
 
 ctx.beginPath();
-ctx.moveTo(200, 200);
-ctx.lineTo(200, 200);
+ctx.moveTo(200, 0);
+ctx.lineTo(200, 300);
 ctx.stroke();
 
 ctx.beginPath();
