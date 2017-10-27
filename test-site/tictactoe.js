@@ -1,6 +1,6 @@
 "use strict";
 
-CanvasRenderingContext2D.prototype.circle = (_x, _y, _r) => {
+CanvasRenderingContext2D.prototype.circle = function(_x, _y, _r) {
   this.moveTo(_x + _r, _y);
   this.arc(_x, _y, _r, 0, 2 * Math.PI);
 };
