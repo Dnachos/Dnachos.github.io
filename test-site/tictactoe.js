@@ -8,6 +8,12 @@ CanvasRenderingContext2D.prototype.circle = function(_x, _y, _r) {
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
+let toeField = new Array(3);
+for (let n=0; n<toeField.length;n++) {
+  toeField[n] = new Array(3);
+}
+
+  
 ctx.beginPath();
 ctx.moveTo(100, 0);
 ctx.lineTo(100, 300);
