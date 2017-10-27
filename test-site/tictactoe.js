@@ -7,7 +7,7 @@ ctx.lineTo(100, 300);
 ctx.stroke();
 
 
-/*ctx.beginPath();
+ctx.beginPath();
 ctx.moveTo(200, 200);
 ctx.lineTo(200, 200);
 ctx.stroke();
@@ -21,4 +21,4 @@ ctx.beginPath();
 ctx.moveTo(0, 200);
 ctx.lineTo(300,200 );
 ctx.stroke();
-*/
+
