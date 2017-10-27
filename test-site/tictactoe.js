@@ -2,21 +2,12 @@ var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
 ctx.beginPath();
-    ctx.moveTo(75, 50);
-    ctx.lineTo(100, 75);
-    ctx.lineTo(100, 25);
-    ctx.fill();
-
-
-
-
-/*ctx.beginPath();
-ctx.moveTo(100, 100);
-ctx.lineTo(100, 100);
+ctx.moveTo(100, 0);
+ctx.lineTo(100, 300);
 ctx.stroke();
 
 
-ctx.beginPath();
+/*ctx.beginPath();
 ctx.moveTo(200, 200);
 ctx.lineTo(200, 200);
 ctx.stroke();
