@@ -20,7 +20,8 @@ for (let n=0; n<toeField.length;n++) {
   
 }
 
-canvas.addEventListener("click", function(){
+canvas.addEventListener("click", function(event){
+  console.log(event);
   
 } );
   
