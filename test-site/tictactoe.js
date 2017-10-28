@@ -21,7 +21,9 @@ for (let n=0; n<toeField.length;n++) {
 }
 
 canvas.addEventListener("click", function(event){
-  console.log(event);
+  let x = Math.floor(event.offsetX/size);
+  let y = Math.floor(event.offsetY/size);
+  console.log(x,y);
   
 } );
   
