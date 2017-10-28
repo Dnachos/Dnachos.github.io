@@ -5,8 +5,8 @@ CanvasRenderingContext2D.prototype.circle = function(_x, _y, _r) {
   this.arc(_x, _y, _r, 0, 2 * Math.PI);
 };
 
-var canvas = document.getElementById('canvas');
-var ctx = canvas.getContext('2d');
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d');
 
 let toeField = new Array(3);
 for (let n=0; n<toeField.length;n++) {
