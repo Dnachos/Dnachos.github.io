@@ -10,7 +10,11 @@ let ctx = canvas.getContext('2d');
 
 let toeField = new Array(3);
 for (let n=0; n<toeField.length;n++) {
-  toeField[n] = new Array(3);
+  let col=toeField[n] = new Array(3);
+  for(let y = 0; y<col.length; y++){
+    col[y]={};
+  }
+  
 }
 
   
@@ -29,3 +33,4 @@ ctx.lineTo(300,200 );
 
 ctx.circle(50, 50, 35);
 ctx.stroke();
+/fail
