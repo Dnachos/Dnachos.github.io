@@ -33,4 +33,4 @@ ctx.lineTo(300,200 );
 
 ctx.circle(50, 50, 35);
 ctx.stroke();
-/fail
+
