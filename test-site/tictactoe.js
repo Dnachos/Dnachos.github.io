@@ -22,12 +22,16 @@ for (let n=0; n<toeField.length;n++) {
 
 canvas.addEventListener("click", function(event){
   let x = Math.floor(event.offsetX/size);
-  let y = Math.floor(event.offsetY/size);
-  console.log(x,y);
-  
+  let y = Math.floor(event.offsetY/size)
+  toeField[x][y].Wok=turn%2;
+draw();
 } );
-  
-ctx.beginPath();
+ function draw () {
+   
+   ctx.fillStyle="white";
+   ctx.fillRect(0,0,300,300);
+   
+   ctx.beginPath();
 ctx.moveTo(size*1, 0);
 ctx.lineTo(size*1, size*3);
 
@@ -42,4 +46,8 @@ ctx.lineTo(size*3,size*2 );
 
 ctx.circle(size/2, size/2, size*3/8);
 ctx.stroke();
+   
+ }
+
+
 
