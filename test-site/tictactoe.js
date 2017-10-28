@@ -10,10 +10,11 @@ let ctx = canvas.getContext('2d');
 
 let turn = 0;
 let size = 100;
+let complexity = 3;
 
-let toeField = new Array(3);
+let toeField = new Array(complexity);
 for (let x = 0; x < toeField.length; x++) {
-    let col = toeField[x] = new Array(3);
+    let col = toeField[x] = new Array(complexity);
     for (let y = 0; y < col.length; y++) {
         col[y] = {};
     }
@@ -30,30 +31,28 @@ canvas.addEventListener("click", function(event) {
 function draw() {
 
     ctx.fillStyle = "white";
-    ctx.fillRect(0, 0, 300, 300);
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.beginPath();
-    ctx.moveTo(size * 1, 0);
-    ctx.lineTo(size * 1, size * 3);
 
-    ctx.moveTo(size * 2, 0);
-    ctx.lineTo(size * 2, size * 3);
-
-    ctx.moveTo(0, size * 1);
-    ctx.lineTo(size * 3, size * 1);
-
-    ctx.moveTo(0, size * 2);
-    ctx.lineTo(size * 3, size * 2);
+    for (let x = 1; x < complexity; x++){
+        ctx.moveTo(x * size, 0);
+        ctx.lineTo(x * size, canvas.height);
+    }
+    for (let y = 1; y < complexity; y++){
+        ctx.moveTo(0, y * size);
+        ctx.lineTo(canvas.width, y * size);
+    }
 
     for (let x = 0;  x <toeField.length; x++){
       for (let y = 0; y<toeField.length; y++){
-        if (toeField[x][y].wok==1){
+        if (toeField[x][y].wok == 1){
           ctx.circle((x + 0.5) * size, (y + 0.5) * size, size * 3/8);
         } else if (toeField[x][y].wok == 0){
           ctx.moveTo(x * size, y * size);
           ctx.lineTo((x + 1) * size,(y + 1) * size);
-          ctx.moveTo(x * size, (y+1) * size);
-          ctx.lineTo((x+1) * size, y * size);
+          ctx.moveTo(x * size, (y + 1) * size);
+          ctx.lineTo((x + 1) * size, y * size);
       }
     }
 
