@@ -22,8 +22,10 @@ for (let x = 0; x < toeField.length; x++) {
 
 canvas.addEventListener("click", function(event) {
     let x = Math.floor(event.offsetX / size);
-    let y = Math.floor(event.offsetY / size)
-    toeField[x][y].wok = turn % 2;
+    let y = Math.floor(event.offsetY / size);
+    if (toeField[x][y].wok == undefined) {
+      toeField[x][y].wok = turn % 2; 
+    }
     draw();
     turn++;
 });
