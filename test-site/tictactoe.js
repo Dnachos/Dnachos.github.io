@@ -55,3 +55,4 @@ function draw() {
     }
     ctx.stroke();
 }
+draw();
