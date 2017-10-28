@@ -18,7 +18,6 @@ for (let x = 0; x < toeField.length; x++) {
     for (let y = 0; y < col.length; y++) {
         col[y] = {};
     }
-
 }
 
 canvas.addEventListener("click", function(event) {
@@ -26,6 +25,7 @@ canvas.addEventListener("click", function(event) {
     let y = Math.floor(event.offsetY / size)
     toeField[x][y].wok = turn % 2;
     draw();
+    turn++;
 });
 
 function draw() {
@@ -41,7 +41,6 @@ function draw() {
         ctx.moveTo(0, y * size);
         ctx.lineTo(canvas.width, y * size);
     }
-
     for (let x = 0;  x <toeField.length; x++) {
       for (let y = 0; y<toeField.length; y++) {
         if (toeField[x][y].wok == 1) {
@@ -54,8 +53,5 @@ function draw() {
         }
       }
     }
-
-    //
     ctx.stroke();
-
 }
