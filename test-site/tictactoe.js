@@ -5,8 +5,8 @@ CanvasRenderingContext2D.prototype.circle = function(_x, _y, _r) {
     this.arc(_x, _y, _r, 0, 2 * Math.PI);
 };
 
-let canvas = document.getElementById('canvas');
-let ctx = canvas.getContext('2d');
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
 
 let turn = 0;
 let size = 100;
@@ -29,12 +29,10 @@ canvas.addEventListener("click", function(event) {
 });
 
 function draw() {
-
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.beginPath();
-
     for (let x = 1; x < complexity; x++){
         ctx.moveTo(x * size, 0);
         ctx.lineTo(x * size, canvas.height);
@@ -44,15 +42,16 @@ function draw() {
         ctx.lineTo(canvas.width, y * size);
     }
 
-    for (let x = 0;  x <toeField.length; x++){
-      for (let y = 0; y<toeField.length; y++){
-        if (toeField[x][y].wok == 1){
+    for (let x = 0;  x <toeField.length; x++) {
+      for (let y = 0; y<toeField.length; y++) {
+        if (toeField[x][y].wok == 1) {
           ctx.circle((x + 0.5) * size, (y + 0.5) * size, size * 3/8);
-        } else if (toeField[x][y].wok == 0){
+        } else if (toeField[x][y].wok == 0) {
           ctx.moveTo(x * size, y * size);
           ctx.lineTo((x + 1) * size,(y + 1) * size);
           ctx.moveTo(x * size, (y + 1) * size);
           ctx.lineTo((x + 1) * size, y * size);
+        }
       }
     }
 
