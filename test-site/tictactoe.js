@@ -34,6 +34,7 @@ canvas.addEventListener("click", function(event) {
        if(toeField[0][0].wok ==toeField[1][0].wok &&toeField[2][0].wok ==toeField[0][0].wok) {
           ctx.moveTo(0,size/2);
            ctx.lineTo(size*3,size/2);
+           console.log;
        }
        }
     }
