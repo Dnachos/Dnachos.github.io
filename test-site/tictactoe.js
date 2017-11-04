@@ -31,7 +31,7 @@ canvas.addEventListener("click", function(event) {
       draw();
       turn++;
     if(toeField[0][0].wok != 0){
-       if(toeField[0][0]==toeField[1][0]&&toeField[2][0]==toeField[0][0]) {
+       if(toeField[0][0].wok ==toeField[1][0].wok &&toeField[2][0].wok ==toeField[0][0].wok) {
           ctx.moveTo(0,size/2);
            ctx.lineTo(size*3,size/2);
        }
