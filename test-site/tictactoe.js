@@ -89,10 +89,10 @@ outer:  for(let x = 0; x < complexity; x++){
 	    }
 	}  
 
-if(cat == true){
-  win = true;
-	break;
-}
+loop1: if(cat == true){
+ 	 win = true;
+	 break loop1;
+       }
 
 function draw() {
 	ctx.fillStyle = win ? "hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)" : "white";
