@@ -94,9 +94,8 @@ outer:  for(let x = 0; x < complexity; x++){
 	}  
 
 loop1: if(cat == true){
- 	 win = true;
-	MLG.play();
-	// break loop1;
+ 	 consol.log(win = true;);
+	 break loop1;
        }
 
 
