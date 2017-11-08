@@ -94,7 +94,7 @@ outer:  for(let x = 0; x < complexity; x++){
 	}  
 
 loop1: if(cat == true){
- 	 consol.log(win = true;);
+ 	 console.log("it works");
 	 break loop1;
        }
 
