@@ -26,29 +26,6 @@ for (let x = 0; x < toeField.length; x++) {
 }
 
 
-
-
-
-outer:  for(let x = 0; x < complexity; x++){
-	   for(let y = 0; y < complexity; y++){
-              if(toeField[x][y] != 0){
-			cat = true;
-			break outer;
-	       }
-	    }
-	}  
-
-loop1: if(cat == true){
- 	 win = true;
-	 break loop1;
-       }
-
-
-
-
-
-
-
 const checkWin = (ax, ay, bx, by, cx, cy) => (toeField[ax][ay] != 0 && toeField[ax][ay] == toeField[bx][by] && toeField[bx][by] == toeField[cx][cy]);
 function line(sx, sy, ex, ey) {
 	ctx.beginPath();
@@ -102,6 +79,30 @@ canvas.addEventListener("click", (event) => {
 		}
 	}
 });
+
+
+
+
+
+outer:  for(let x = 0; x < complexity; x++){
+	   for(let y = 0; y < complexity; y++){
+              if(toeField[x][y] != 0){
+			cat = true;
+			break outer;
+	       }
+	    }
+	}  
+
+loop1: if(cat == true){
+ 	 win = true;
+	MLG.play();
+	// break loop1;
+       }
+
+
+
+
+
 
 
 
