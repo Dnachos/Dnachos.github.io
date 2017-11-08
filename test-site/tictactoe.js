@@ -82,7 +82,7 @@ canvas.addEventListener("click", (event) => {
 
 
 
-outer:  while(turn >=9){
+outer:  while(turn >= complexity * complexity{
 
   for(let x = 0; x < complexity; x++){
 	             console.log("it works1");
