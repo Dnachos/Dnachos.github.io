@@ -88,7 +88,7 @@ outer:  for(let x = 0; x < complexity; x++){
 	             console.log("it works1");
 	   for(let y = 0; y < complexity; y++){
 		     console.log("it works2");
-              if(toeField[x][y] != 1){
+              if(toeField[x][y] == 1){
 			cat = true;
 		     console.log("it works3");
 			break outer;
