@@ -13,7 +13,7 @@ canvas.width = complexity * size;
 canvas.height = complexity * size;
 let ctx = canvas.getContext("2d");
 let win = false;
-let lose = false;
+let cat = false;
 let done = false;
 let MLG = new Audio("MLGHORN.mp3");
 
@@ -78,6 +78,19 @@ canvas.addEventListener("click", (event) => {
 		}
 	}
 });
+
+outer; for(let x = 0; x < complexity; x++;){
+	   for(let y = 0; y < complexity; y++;){
+              if(toeField[x][y] != 0){
+			cat = true;
+			break outer;
+	       }
+	    }
+	}  
+
+if(cat == true){
+  win = true;
+}
 
 function draw() {
 	ctx.fillStyle = win ? "hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)" : "white";
