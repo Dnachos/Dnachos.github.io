@@ -82,17 +82,16 @@ canvas.addEventListener("click", (event) => {
 
 
 
-while(turn >=9){
+outer:  while(turn >=9){
 
-outer:  for(let x = 0; x < complexity; x++){
+  for(let x = 0; x < complexity; x++){
 	             console.log("it works1");
 	   for(let y = 0; y < complexity; y++){
 		     console.log("it works2");
               if(toeField[x][y] == 1){
 			cat = true;
 		     console.log("it works3");
-			break outer;
-		      
+			break outer;		      
 	       }
 	    }
 	}  
