@@ -91,6 +91,7 @@ outer:  for(let x = 0; x < complexity; x++){
 
 if(cat == true){
   win = true;
+	break;
 }
 
 function draw() {
