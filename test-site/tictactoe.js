@@ -79,7 +79,8 @@ canvas.addEventListener("click", (event) => {
 	}
 });
 
-outer; for(let x = 0; x < complexity; x++){
+
+outer:  for(let x = 0; x < complexity; x++){
 	   for(let y = 0; y < complexity; y++){
               if(toeField[x][y] != 0){
 			cat = true;
