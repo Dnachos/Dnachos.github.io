@@ -89,12 +89,13 @@ outer:  for(let x = 0; x < complexity; x++){
               if(toeField[x][y] != 0){
 			cat = true;
 			break outer;
+		      console.log("it works");
 	       }
 	    }
 	}  
 
 loop1: if(cat == true){
- 	 console.log("it works");
+ 	 //console.log("");
 	 break loop1;
        }
 
