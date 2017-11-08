@@ -13,6 +13,7 @@ canvas.width = complexity * size;
 canvas.height = complexity * size;
 let ctx = canvas.getContext("2d");
 let win = false;
+let lose = false;
 let done = false;
 let MLG = new Audio("MLGHORN.mp3");
 
