@@ -91,9 +91,9 @@ canvas.addEventListener("click", (event) => {
 		}
 	}
 	
- cat:	 if(turn == complexity * complexity && win == false){
+ 	 if(turn == complexity * complexity && win == false){
 	 setTimeout(cat, 2*1000);
-	  break cat;
+	  turn = 0;
  	 }
 	
 });
