@@ -24,6 +24,24 @@ for (let x = 0; x < toeField.length; x++) {
 	}
 }
 
+function cat () {
+alert("Cat's game!");
+      
+      MLG.volume = 1;
+      MLG.addEventListener("ended", function() {
+	 				MLG.play();
+		}
+			 }
+      
+      	ctx.fillStyle = "#ddd";
+	ctx.fillRect(0, canvas.height / 4, canvas.width, canvas.height / 2);
+	ctx.fillStyle = "#000";
+	ctx.textAlign = "center";
+	ctx.textBaseline = "middle"
+	ctx.font = "120px Arial";
+	ctx.fillText("Reset", canvas.width / 2, canvas.height / 2);
+}
+
 
 const checkWin = (ax, ay, bx, by, cx, cy) => (toeField[ax][ay] != 0 && toeField[ax][ay] == toeField[bx][by] && toeField[bx][by] == toeField[cx][cy]);
 function line(sx, sy, ex, ey) {
@@ -79,7 +97,7 @@ canvas.addEventListener("click", (event) => {
 	}
 	
 	if(turn == complexity * complexity && win == false){
-	 alert("Cat's Game!");
+	 setTimeout(cat, 2*1000);
   }
 	
 });
