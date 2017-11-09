@@ -13,7 +13,6 @@ canvas.width = complexity * size;
 canvas.height = complexity * size;
 let ctx = canvas.getContext("2d");
 let win = false;
-let cat = false;
 let done = false;
 let MLG = new Audio("MLGHORN.mp3");
 
@@ -83,13 +82,8 @@ canvas.addEventListener("click", (event) => {
 
 
   if(turn == complexity * complexity && win == false){
-	cat = true;	     
+	 alert("Cat's Game!");
   }
-
-if(cat == true){
-alert("cat's game");
-}
-
 
 
 function draw() {
