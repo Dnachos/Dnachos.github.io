@@ -26,12 +26,7 @@ for (let x = 0; x < toeField.length; x++) {
 
 function cat () {
 alert("Cat's game!");
-      
-      MLG.volume = 1;
-      MLG.addEventListener("ended", function() {
-	 				MLG.play();
-		}
-			 }
+}
       
       	ctx.fillStyle = "#ddd";
 	ctx.fillRect(0, canvas.height / 4, canvas.width, canvas.height / 2);
