@@ -25,9 +25,7 @@ for (let x = 0; x < toeField.length; x++) {
 }
 
 function cat () {
-alert("Cat's game!");
-
-      
+  
       	ctx.fillStyle = "#ddd";
 	ctx.fillRect(0, canvas.height / 4, canvas.width, canvas.height / 2);
 	ctx.fillStyle = "#000";
