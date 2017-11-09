@@ -86,7 +86,7 @@ canvas.addEventListener("click", (event) => {
 	cat = true;	     
   }
 
-if(cat){
+if(cat == true){
 alert("cat's game");
 }
 
