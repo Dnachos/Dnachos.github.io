@@ -82,7 +82,7 @@ canvas.addEventListener("click", (event) => {
 
 
 
-  if(turn == complexity * complexity && win = false){
+  if(turn == complexity * complexity && win == false){
 	cat = true;	     
   }
 
