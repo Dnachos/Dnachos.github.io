@@ -77,13 +77,13 @@ canvas.addEventListener("click", (event) => {
 			MLG.play();
 		}
 	}
-});
-
-
-
-  if(turn == complexity * complexity && win == false){
+	
+	if(turn == complexity * complexity && win == false){
 	 alert("Cat's Game!");
   }
+	
+});
+
 
 
 function draw() {
