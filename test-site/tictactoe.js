@@ -35,6 +35,7 @@ function cat () {
 	
 	canvas.addEventListener("click", function() {
 					location.reload();
+				});
 }
 
 
