@@ -25,7 +25,6 @@ for (let x = 0; x < toeField.length; x++) {
 }
 
 function cat () {
-  
       	ctx.fillStyle = "#ddd";
 	ctx.fillRect(0, canvas.height / 4, canvas.width, canvas.height / 2);
 	ctx.fillStyle = "#000";
@@ -33,6 +32,9 @@ function cat () {
 	ctx.textBaseline = "middle"
 	ctx.font = "120px Arial";
 	ctx.fillText("Reset", canvas.width / 2, canvas.height / 2);
+	
+	canvas.addEventListener("click", function() {
+					location.reload();
 }
 
 
