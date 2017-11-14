@@ -7,7 +7,7 @@ CanvasRenderingContext2D.prototype.circle = function(_x, _y, _r) {
 
 let turn = 0;
 let size = 200;
-let complexity = 4;
+let complexity = 3;
 let canvas = document.getElementById("canvas");
 canvas.width = complexity * size;
 canvas.height = complexity * size;
