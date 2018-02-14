@@ -2,22 +2,25 @@
  
 document.addEventListener("DOMContentLoaded", function() {
      var canvas;
-    classic();
+    menu();
     console.log("click detected");
  });
 
 
-function classic() {
-
-  canvas.addEventListener("click", function() {
-      canvas = document.getElementById('canvas');
+function menu() {
+  canvas = document.getElementById('canvas');
       var ctx = canvas.getContext('2d');
       canvas.width = 600;
       canvas.height = 600;
+  canvas.addEventListener("click", function() {
+   classic();
    });
+}
  
  
- 
+function classic() {
+
+
 class Vector {
     constructor(_x, _y) {
         this.x = _x || 0;
@@ -168,7 +171,7 @@ window.addEventListener("DOMContentLoaded", () => {
         requestAnimationFrame(loop);
     })();
     document.body.appendChild(canvas);
-});
+  });
 
 }
 
