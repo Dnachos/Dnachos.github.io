@@ -4,10 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     menu();
  });
 
-
-
- 
- 
 function classic() {
 
 
