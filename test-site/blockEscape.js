@@ -5,16 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
  });
 
 
-function menu() {
-  canvas = document.getElementById('canvas');
-      var ctx = canvas.getContext('2d');
-      canvas.width = 600;
-      canvas.height = 600;
-  canvas.addEventListener("click", function() {
-   classic();
-   console.log("click detected");
-   });
-}
+
  
  
 function classic() {
@@ -175,5 +166,16 @@ window.addEventListener("DOMContentLoaded", () => {
 }
 
 
+function menu() {
+  canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      canvas.width = 600;
+      canvas.height = 600;
+  
+  canvas.addEventListener("click", function() {
+   classic();
+   console.log("click detected");
+   });
+}
 
 
