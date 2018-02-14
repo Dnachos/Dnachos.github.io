@@ -1,9 +1,7 @@
 "use strict";
   var canvas;
 document.addEventListener("DOMContentLoaded", function() {
-    
     menu();
-    console.log("click detected");
  });
 
 
@@ -14,6 +12,7 @@ function menu() {
       canvas.height = 600;
   canvas.addEventListener("click", function() {
    classic();
+   console.log("click detected");
    });
 }
  
