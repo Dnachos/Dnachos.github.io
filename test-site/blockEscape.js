@@ -2,12 +2,6 @@
  
 document.addEventListener("DOMContentLoaded", function() {
      var canvas;
-    
-canvas.addEventListener("click", function() {
-     canvas = document.getElementById('canvas');
-     var ctx = canvas.getContext('2d');
-     canvas.width = 600;
-     canvas.height = 600;
     classic();
     console.log("click detected");
         });
@@ -16,6 +10,15 @@ canvas.addEventListener("click", function() {
 
 function classic() {
 
+  canvas.addEventListener("click", function() {
+      canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      canvas.width = 600;
+      canvas.height = 600;
+ 
+ 
+ 
+ 
 class Vector {
     constructor(_x, _y) {
         this.x = _x || 0;
