@@ -1,7 +1,7 @@
 "use strict";
- 
+  var canvas;
 document.addEventListener("DOMContentLoaded", function() {
-     var canvas;
+    
     menu();
     console.log("click detected");
  });
