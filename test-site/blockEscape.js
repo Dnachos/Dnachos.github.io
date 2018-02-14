@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
      var canvas;
     classic();
     console.log("click detected");
-        });
  });
 
 
@@ -15,7 +14,7 @@ function classic() {
       var ctx = canvas.getContext('2d');
       canvas.width = 600;
       canvas.height = 600;
- 
+   });
  
  
  
