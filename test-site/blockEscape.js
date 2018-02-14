@@ -2,12 +2,12 @@
  
 document.addEventListener("DOMContentLoaded", function() {
      var canvas;
-    var ctx = canvas.getContext('2d');
-    canvas.width = 600;
-    canvas.height = 600;
     
 canvas.addEventListener("click", function() {
      canvas = document.getElementById('canvas');
+     var ctx = canvas.getContext('2d');
+     canvas.width = 600;
+     canvas.height = 600;
     classic();
     console.log("click detected");
         });
