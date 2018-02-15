@@ -3,11 +3,11 @@
   const cols = 20;
   const rows = 20;
   const size = 30;
- 
+  let loaded = 0;
 
   
 document.addEventListener("DOMContentLoaded", function() {
-  let loaded = 0;
+ 
   
   canvas = document.getElementById('canvas');
      canvas.width = cols * size;
