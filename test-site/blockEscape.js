@@ -196,7 +196,7 @@ console.log("it works 2");
         tickNumber++;
         requestAnimationFrame(loop);
     })();
-    document.body.appendChild(canvas);
+    
 
 }
 
