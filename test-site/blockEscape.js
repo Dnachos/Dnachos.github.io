@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function menu() {
   canvas = document.getElementById('canvas');
       var ctx = canvas.getContext('2d');
-      canvas.width = 600;
-      canvas.height = 600;
+     canvas.width = cols * size;
+     canvas.height = rows * size;
   
   canvas.addEventListener("click", function() {
    console.log("click detected");
@@ -87,10 +87,10 @@ console.log("it works 2");
     const cols = 20;
     const rows = 20;
     const size = 30;
-    let canvas = document.createElement("canvas");
-    canvas.width = cols * size;
-    canvas.height = rows * size;
-    let ctx = canvas.getContext("2d");
+    //let canvas = document.createElement("canvas");
+    
+  
+    //let ctx = canvas.getContext("2d");
     const min = new Vector(0, 0);
     const max = new Vector(canvas.width, canvas.height);
     const gravity = new Vector(0, 0.1);
