@@ -31,8 +31,9 @@ function menu() {
    loaded = true;
    classic();
   }
+                          }
                });
-}
+
 
 
 
