@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
 } 
   
+  
+  canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+     canvas.width = cols * size;
+     canvas.height = rows * size;
+  
+ 
     const cols = 20;
     const rows = 20;
     const size = 30;
@@ -43,11 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function menu() {
-  canvas = document.getElementById('canvas');
-      var ctx = canvas.getContext('2d');
-     canvas.width = cols * size;
-     canvas.height = rows * size;
-  
   canvas.addEventListener("click", function() {
    console.log("click detected");
    classic();
