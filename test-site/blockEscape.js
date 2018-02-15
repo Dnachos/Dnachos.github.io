@@ -14,14 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
     //let canvas = document.createElement("canvas");
     //let ctx = canvas.getContext("2d");
-    const shapes = [
-        [[1]],
-        [[0, 1], [0, 1], [1, 1]],
-        [[1, 1, 1]],
-        [[1, 1], [1, 0], [1, 1]],
-        [[1, 1], [1, 0]]
-    ];
-
   
   menu();
  });
@@ -49,8 +41,19 @@ function classic() {
   
 console.log("it works 1");
   
-
-  class Vector {
+    const min = new Vector(0, 0);
+    const max = new Vector(canvas.width, canvas.height);
+    const gravity = new Vector(0, 0.1);
+    const shapes = [
+        [[1]],
+        [[0, 1], [0, 1], [1, 1]],
+        [[1, 1, 1]],
+        [[1, 1], [1, 0], [1, 1]],
+        [[1, 1], [1, 0]]
+    ];
+  
+  
+   class Vector {
     constructor(_x, _y) {
         this.x = _x || 0;
         this.y =  _y || 0;
@@ -66,11 +69,6 @@ console.log("it works 1");
     }
     
 } 
-  
-  
-    const min = new Vector(0, 0);
-    const max = new Vector(canvas.width, canvas.height);
-    const gravity = new Vector(0, 0.1);
   
   
 class Piece extends Vector {
