@@ -84,7 +84,7 @@ class Piece extends Vector {
 console.log("it works 2");
 
             
-window.addEventListener("DOMContentLoaded", () => {
+function running() {
     const cols = 20;
     const rows = 20;
     const size = 30;
@@ -179,7 +179,7 @@ window.addEventListener("DOMContentLoaded", () => {
         requestAnimationFrame(loop);
     })();
     document.body.appendChild(canvas);
-  });
+}
 
 }
 
