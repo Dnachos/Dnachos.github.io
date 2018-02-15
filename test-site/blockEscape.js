@@ -4,14 +4,14 @@
   const rows = 20;
   const size = 30;
 
-canvas = document.getElementById('canvas');
-      var ctx = canvas.getContext('2d');
-     canvas.width = cols * size;
-     canvas.height = rows * size;
+
 
   
 document.addEventListener("DOMContentLoaded", function() {
  
+  canvas = document.getElementById('canvas');
+     canvas.width = cols * size;
+     canvas.height = rows * size;
 
     //let canvas = document.createElement("canvas");
     //let ctx = canvas.getContext("2d");
@@ -39,6 +39,9 @@ function menu() {
 
 
 function classic() {
+ 
+var ctx = canvas.getContext('2d');
+  
   
 console.log("it works 1");
   
