@@ -24,7 +24,7 @@ function menu() {
 function classic() {
 
   
-console.log("it works 1);
+console.log("it works 1");
   
             
 class Vector {
@@ -81,7 +81,7 @@ class Piece extends Vector {
 }
 
 
-console.log("it works 2);
+console.log("it works 2");
 
             
 window.addEventListener("DOMContentLoaded", () => {
@@ -114,7 +114,7 @@ window.addEventListener("DOMContentLoaded", () => {
         field[x] = new Array(rows);
     }
 
- console.log("it works 3);
+ console.log("it works 3");
     
     let tickNumber = 0;
     (function loop() {
