@@ -1,8 +1,12 @@
 "use strict";
   var canvas;
-    
+  
 
 document.addEventListener("DOMContentLoaded", function() {
+  const cols = 20;
+  const rows = 20;
+  const size = 30;
+  
   
   class Vector {
     constructor(_x, _y) {
@@ -27,10 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
      canvas.width = cols * size;
      canvas.height = rows * size;
   
- 
-    const cols = 20;
-    const rows = 20;
-    const size = 30;
     //let canvas = document.createElement("canvas");
     //let ctx = canvas.getContext("2d");
     const min = new Vector(0, 0);
@@ -44,8 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
         [[1, 1], [1, 0]]
     ];
 
+  
   menu();
  });
+
 
 
 
