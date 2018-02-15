@@ -8,6 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const size = 30;
   
   
+  
+  canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+     canvas.width = cols * size;
+     canvas.height = rows * size;
+  
+  
+  
   class Vector {
     constructor(_x, _y) {
         this.x = _x || 0;
@@ -25,11 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
 } 
   
-  
-  canvas = document.getElementById('canvas');
-      var ctx = canvas.getContext('2d');
-     canvas.width = cols * size;
-     canvas.height = rows * size;
+
   
     //let canvas = document.createElement("canvas");
     //let ctx = canvas.getContext("2d");
