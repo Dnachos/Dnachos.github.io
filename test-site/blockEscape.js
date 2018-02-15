@@ -1,11 +1,9 @@
 "use strict";
   var canvas;
- const cols = 20;
+    const cols = 20;
     const rows = 20;
     const size = 30;
     //let canvas = document.createElement("canvas");
-    
-  
     //let ctx = canvas.getContext("2d");
     const min = new Vector(0, 0);
     const max = new Vector(canvas.width, canvas.height);
@@ -17,6 +15,30 @@
         [[1, 1], [1, 0], [1, 1]],
         [[1, 1], [1, 0]]
     ];
+
+
+
+
+class Vector {
+    constructor(_x, _y) {
+        this.x = _x || 0;
+        this.y =  _y || 0;
+        
+    }
+    add(obj) {
+        this.x += obj.x;
+        this.y += obj.y;
+    }
+    set(x,y){
+        this.x=x;
+        this.y=y;
+    }
+    
+}
+
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -45,24 +67,6 @@ function classic() {
   
 console.log("it works 1");
   
-            
-class Vector {
-    constructor(_x, _y) {
-        this.x = _x || 0;
-        this.y =  _y || 0;
-        
-    }
-    add(obj) {
-        this.x += obj.x;
-        this.y += obj.y;
-    }
-    set(x,y){
-        this.x=x;
-        this.y=y;
-    }
-    
-}
-
 
 class Piece extends Vector {
     constructor(_x, _y, _size, _solids) {
