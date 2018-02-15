@@ -1,5 +1,8 @@
 "use strict";
   var canvas;
+    
+
+document.addEventListener("DOMContentLoaded", function() {
     const cols = 20;
     const rows = 20;
     const size = 30;
@@ -35,14 +38,9 @@ class Vector {
     }
     
 }
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
+  
     menu();
+  
  });
 
 
