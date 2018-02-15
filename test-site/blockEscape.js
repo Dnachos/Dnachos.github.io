@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //let canvas = document.createElement("canvas");
     //let ctx = canvas.getContext("2d");
-  
+  if (loaded==0) {
   menu();
-  
+  }
  });
 
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-function menu(loaded==0) {
+function menu() {
   canvas.addEventListener("click", function() {
    console.log("click detected");
    classic();
