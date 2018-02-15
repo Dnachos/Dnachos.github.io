@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
 function menu() {
   canvas = document.getElementById('canvas');
       var ctx = canvas.getContext('2d');
@@ -14,11 +13,10 @@ function menu() {
       canvas.height = 600;
   
   canvas.addEventListener("click", function() {
-   classic();
    console.log("click detected");
+   classic();
    });
 }
-
 
 
 
