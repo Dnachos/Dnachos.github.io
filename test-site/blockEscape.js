@@ -83,7 +83,7 @@ class Piece extends Vector {
 
 console.log("it works 2");
 
-            
+
 function running() {
     const cols = 20;
     const rows = 20;
@@ -181,6 +181,8 @@ function running() {
     document.body.appendChild(canvas);
 }
 
+  running();
+  
 }
 
 
