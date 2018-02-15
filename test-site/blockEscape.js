@@ -23,7 +23,10 @@ function menu() {
 
 function classic() {
 
-
+  
+console.log("it works 1);
+  
+            
 class Vector {
     constructor(_x, _y) {
         this.x = _x || 0;
@@ -78,7 +81,9 @@ class Piece extends Vector {
 }
 
 
+console.log("it works 2);
 
+            
 window.addEventListener("DOMContentLoaded", () => {
     const cols = 20;
     const rows = 20;
@@ -109,7 +114,7 @@ window.addEventListener("DOMContentLoaded", () => {
         field[x] = new Array(rows);
     }
 
- 
+ console.log("it works 3);
     
     let tickNumber = 0;
     (function loop() {
