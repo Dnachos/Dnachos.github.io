@@ -12,16 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
      canvas.height = rows * size;
   
   
-  
-  
-  
-
-  
     //let canvas = document.createElement("canvas");
     //let ctx = canvas.getContext("2d");
-    const min = new Vector(0, 0);
-    const max = new Vector(canvas.width, canvas.height);
-    const gravity = new Vector(0, 0.1);
     const shapes = [
         [[1]],
         [[0, 1], [0, 1], [1, 1]],
@@ -37,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
 function menu() {
   canvas.addEventListener("click", function() {
    console.log("click detected");
@@ -47,8 +42,10 @@ function menu() {
 
 
 
-function classic() {
 
+
+
+function classic() {
   
 console.log("it works 1");
   
@@ -71,7 +68,9 @@ console.log("it works 1");
 } 
   
   
-  
+    const min = new Vector(0, 0);
+    const max = new Vector(canvas.width, canvas.height);
+    const gravity = new Vector(0, 0.1);
   
   
 class Piece extends Vector {
