@@ -3,6 +3,24 @@
     
 
 document.addEventListener("DOMContentLoaded", function() {
+  
+  class Vector {
+    constructor(_x, _y) {
+        this.x = _x || 0;
+        this.y =  _y || 0;
+        
+    }
+    add(obj) {
+        this.x += obj.x;
+        this.y += obj.y;
+    }
+    set(x,y){
+        this.x=x;
+        this.y=y;
+    }
+    
+} 
+  
     const cols = 20;
     const rows = 20;
     const size = 30;
@@ -19,28 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         [[1, 1], [1, 0]]
     ];
 
-
-
-
-class Vector {
-    constructor(_x, _y) {
-        this.x = _x || 0;
-        this.y =  _y || 0;
-        
-    }
-    add(obj) {
-        this.x += obj.x;
-        this.y += obj.y;
-    }
-    set(x,y){
-        this.x=x;
-        this.y=y;
-    }
-    
-}
-  
-    menu();
-  
+  menu();
  });
 
 
