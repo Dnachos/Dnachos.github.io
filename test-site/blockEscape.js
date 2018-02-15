@@ -41,9 +41,7 @@ function classic() {
   
 console.log("it works 1");
   
-    const min = new Vector(0, 0);
-    const max = new Vector(canvas.width, canvas.height);
-    const gravity = new Vector(0, 0.1);
+  
     const shapes = [
         [[1]],
         [[0, 1], [0, 1], [1, 1]],
@@ -69,6 +67,11 @@ console.log("it works 1");
     }
     
 } 
+  
+  
+   const min = new Vector(0, 0);
+    const max = new Vector(canvas.width, canvas.height);
+    const gravity = new Vector(0, 0.1);
   
   
 class Piece extends Vector {
