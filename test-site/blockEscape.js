@@ -13,22 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   
   
-  class Vector {
-    constructor(_x, _y) {
-        this.x = _x || 0;
-        this.y =  _y || 0;
-        
-    }
-    add(obj) {
-        this.x += obj.x;
-        this.y += obj.y;
-    }
-    set(x,y){
-        this.x=x;
-        this.y=y;
-    }
-    
-} 
+  
   
 
   
@@ -68,6 +53,27 @@ function classic() {
 console.log("it works 1");
   
 
+  class Vector {
+    constructor(_x, _y) {
+        this.x = _x || 0;
+        this.y =  _y || 0;
+        
+    }
+    add(obj) {
+        this.x += obj.x;
+        this.y += obj.y;
+    }
+    set(x,y){
+        this.x=x;
+        this.y=y;
+    }
+    
+} 
+  
+  
+  
+  
+  
 class Piece extends Vector {
     constructor(_x, _y, _size, _solids) {
         super(_x, _y);
