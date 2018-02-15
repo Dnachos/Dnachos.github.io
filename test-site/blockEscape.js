@@ -30,7 +30,9 @@ function menu(loaded==0) {
   canvas.addEventListener("click", function() {
    console.log("click detected");
    classic();
+    console.log("test1");
    loaded++;
+    console.log("test2");
    });
 }
 
