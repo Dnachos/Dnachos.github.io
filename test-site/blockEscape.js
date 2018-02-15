@@ -178,8 +178,6 @@ console.log("it works 2");
         requestAnimationFrame(loop);
     })();
     document.body.appendChild(canvas);
-}
-
 
 }
 
