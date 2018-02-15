@@ -3,7 +3,7 @@
   const cols = 20;
   const rows = 20;
   const size = 30;
-  let loaded = 0;
+  let loaded = false;
 
   
 document.addEventListener("DOMContentLoaded", function() {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //let canvas = document.createElement("canvas");
     //let ctx = canvas.getContext("2d");
-  if (loaded==0) {
+  if (loaded==false) {
   menu();
   }
  });
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function menu() {
   canvas.addEventListener("click", function() {
    console.log("click detected");
-   loaded++;
+   loaded = true;
    classic();
    });
 }
