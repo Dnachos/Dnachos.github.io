@@ -1,5 +1,24 @@
 "use strict";
   var canvas;
+ const cols = 20;
+    const rows = 20;
+    const size = 30;
+    //let canvas = document.createElement("canvas");
+    
+  
+    //let ctx = canvas.getContext("2d");
+    const min = new Vector(0, 0);
+    const max = new Vector(canvas.width, canvas.height);
+    const gravity = new Vector(0, 0.1);
+    const shapes = [
+        [[1]],
+        [[0, 1], [0, 1], [1, 1]],
+        [[1, 1, 1]],
+        [[1, 1], [1, 0], [1, 1]],
+        [[1, 1], [1, 0]]
+    ];
+
+
 document.addEventListener("DOMContentLoaded", function() {
     menu();
  });
@@ -84,23 +103,7 @@ class Piece extends Vector {
 console.log("it works 2");
 
 
-    const cols = 20;
-    const rows = 20;
-    const size = 30;
-    //let canvas = document.createElement("canvas");
-    
-  
-    //let ctx = canvas.getContext("2d");
-    const min = new Vector(0, 0);
-    const max = new Vector(canvas.width, canvas.height);
-    const gravity = new Vector(0, 0.1);
-    const shapes = [
-        [[1]],
-        [[0, 1], [0, 1], [1, 1]],
-        [[1, 1, 1]],
-        [[1, 1], [1, 0], [1, 1]],
-        [[1, 1], [1, 0]]
-    ];
+   
     let ent = [];
     window.entities = ent;
     
