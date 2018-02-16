@@ -30,9 +30,10 @@ function menu() {
    console.log("click detected");
    loaded = true;
    classic();
-  }
-                          }
-               });
+    }
+   }
+ }
+   
 
 
 
