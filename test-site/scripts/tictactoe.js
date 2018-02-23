@@ -88,8 +88,11 @@ const canvasClicked = event => {
 		
 		
 if (turn == 9 && win ==false) {
-	console.log("cat's game");
-	location.reload();
+	window.setTimeout(  
+    function() {  
+        location.reload(); 
+    	},  
+    3*1000);
 }
 
 		
