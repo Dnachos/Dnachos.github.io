@@ -84,6 +84,15 @@ const canvasClicked = event => {
 				win = true;
 			}
 		}
+		
+		
+		
+if (turn == 9 && win ==false) {
+	console.log("cat's game");
+}
+
+		
+		
 		if (win == true) {
 			setInterval(function() {
 				draw("hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)");
@@ -111,11 +120,6 @@ const canvasClicked = event => {
 		}
 	}
 };
-
-if (turn==9 && win ==false){
-	console.log("cat's game");
-}
-
 
 function draw(color) {
 	ctx.fillStyle = color || "white";
