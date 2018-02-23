@@ -92,7 +92,7 @@ if (turn == 9 && win ==false) {
     function() {  
         location.reload(); 
     	},  
-    2.5*1000);
+    1.5*1000);
 }
 
 		
