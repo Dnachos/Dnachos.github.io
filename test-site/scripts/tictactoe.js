@@ -91,6 +91,8 @@ const canvasClicked = event => {
 			MLG.volume = 1;
 			MLG.addEventListener("ended", function() {
 				let button = document.createElement("button");
+				ctx.fillStyle = "lightgray";
+				ctx.fillRect(200, 200, 600, 200);
 				button.textContent = "Reset";
 				button.style.width = size * complexity + "px";
 				button.style.height = size * complexity / 2 + "px";
