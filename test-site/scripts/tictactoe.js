@@ -112,6 +112,11 @@ const canvasClicked = event => {
 	}
 };
 
+if (turn==9 && win ==false){
+	console.log("cat's game");
+}
+
+
 function draw(color) {
 	ctx.fillStyle = color || "white";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
