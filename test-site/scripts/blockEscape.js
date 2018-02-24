@@ -149,7 +149,7 @@ let ctx;
 let tickNumber = 0;
 let field;
 
-document.addEventListener("DOMContentLoaded", () => {
+const begin = () => {
 	canvas = document.getElementById("canvas");
 	canvas.width = cols * size;
 	canvas.height = rows * size;
@@ -157,12 +157,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	ctx.fillStyle = "rgb(0,0,0)";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
+	setInterval(() => {
+		ctx.beginPath();
+		ctx.strokeStyle = "white";
+		ctx.rect(225,150,150,50);
+		ctx.stroke();
+		ctx.fillStyle = `hsl(${Date.now() / .75e4 * 360 % 360}, 100%, 50%)`;
+		ctx.font = "45px Crayon";
+		ctx.textBaseline = "middle";
+		ctx.textAlign = "center";
+		ctx.fillText("Classic", 300, 175);
+	}, 33);
 
-	ctx.beginPath();
-	ctx.strokeStyle = "white";
-	ctx.rect(150,150,200,50);
-	ctx.stroke();
-	ctx.strokeStyle = "white";
-	ctx.strokeText("Classic", 230, 175);
-	canvas.addEventListener("click", classic, {once: true});
-});
+	canvas.addEventListener("click", () => {
+		classButton();
+	});
+
+
+function classButton () {
+	if(1==1){
+	classic();
+	}
+
+
+}
+
+
+};
