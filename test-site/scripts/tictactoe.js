@@ -105,8 +105,8 @@ if (turn == 9 && win ==false) {
 				
 				if (topWin == true) {
 					ctx.beginPath();
-					ctx.moveTo(0, 150);
-					ctx.lineTo(size * complexity, 150);
+					ctx.moveTo(0, 100);
+					ctx.lineTo(size * complexity, 100);
 					ctx.lineWidth = 3;
 					ctx.stroke();
 				}
