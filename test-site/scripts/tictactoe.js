@@ -49,7 +49,6 @@ const canvasClicked = event => {
 					ctx.lineTo(size * complexity, size * n + size / 2);
 					ctx.lineWidth = 3;
 					ctx.stroke();
-					console.log("topwin");
 					topWin = true;
 					win = true;
 				}
@@ -104,6 +103,14 @@ if (turn == 9 && win ==false) {
 			setInterval(function() {
 				draw("hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)");
 			}, 33);
+			if (topWin == true) {
+				ctx.beginPath();
+				ctx.moveTo(0, size * n + size / 2);
+				ctx.lineTo(size * complexity, size * n + size / 2);
+				ctx.lineWidth = 3;
+				ctx.stroke();
+			}
+				
 			MLG.volume = 1;
 			MLG.addEventListener("ended", function() {
 				let button = document.createElement("button");
