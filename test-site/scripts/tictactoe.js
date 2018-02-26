@@ -4,6 +4,7 @@ CanvasRenderingContext2D.prototype.circle = function(_x, _y, _r) {
 	this.moveTo(_x + _r, _y);
 	this.arc(_x, _y, _r, 0, 2 * Math.PI);
 };
+
 let n;
 let turn = 0;
 let size = 200;
@@ -105,8 +106,8 @@ if (turn == 9 && win ==false) {
 			}, 33);
 			if (topWin == true) {
 				ctx.beginPath();
-				ctx.moveTo(0, size * n + size / 2);
-				ctx.lineTo(size * complexity, size * n + size / 2);
+				ctx.moveTo(0, 300);
+				ctx.lineTo(size * complexity, 300);
 				ctx.lineWidth = 3;
 				ctx.stroke();
 			}
