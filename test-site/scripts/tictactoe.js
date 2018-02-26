@@ -102,14 +102,17 @@ if (turn == 9 && win ==false) {
 		if (win == true) {
 			setInterval(function() {
 				draw("hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)");
+				
+				if (topWin == true) {
+					ctx.beginPath();
+					ctx.moveTo(0, 300);
+					ctx.lineTo(size * complexity, 300);
+					ctx.lineWidth = 3;
+					ctx.stroke();
+				}
+				
 			}, 33);
-			if (topWin == true) {
-				ctx.beginPath();
-				ctx.moveTo(0, 300);
-				ctx.lineTo(size * complexity, 300);
-				ctx.lineWidth = 3;
-				ctx.stroke();
-			}
+			
 				
 			MLG.volume = 1;
 			MLG.addEventListener("ended", function() {
