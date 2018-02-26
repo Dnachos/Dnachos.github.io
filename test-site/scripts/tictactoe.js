@@ -13,6 +13,7 @@ let ctx;
 let win = false;
 let MLG = new Audio("audio/MLGHORN.mp3");
 let toeField;
+let topWin = false;
 
 document.addEventListener("DOMContentLoaded", () => {
 	canvas = document.getElementById("canvas");
@@ -48,6 +49,8 @@ const canvasClicked = event => {
 					ctx.lineTo(size * complexity, size * n + size / 2);
 					ctx.lineWidth = 3;
 					ctx.stroke();
+					console.log("topwin");
+					topWin = true;
 					win = true;
 				}
 			}
