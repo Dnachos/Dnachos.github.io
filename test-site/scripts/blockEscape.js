@@ -166,7 +166,7 @@ const begin = () => {
 		ctx.font = "45px Crayon";
 		ctx.textBaseline = "middle";
 		ctx.textAlign = "center";
-		ctx.fillText("Classic", 300, 175);
+		ctx.fillText("Classic", 310, 175);
 	}, 33);
 
 	canvas.addEventListener("click", () => {
