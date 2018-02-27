@@ -62,6 +62,7 @@ const canvasClicked = event => {
 					ctx.lineTo(size * n + size / 2, size * complexity);
 					ctx.lineWidth = 3;
 					ctx.stroke();
+					alert("reee");
 					win = true;
 				}
 			}
