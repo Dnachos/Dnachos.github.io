@@ -15,7 +15,7 @@ let win = false;
 let MLG = new Audio("audio/MLGHORN.mp3");
 let toeField;
 let topWin = false;
-let leftVertWin = false;
+let midHorizWin = false;
 
 document.addEventListener("DOMContentLoaded", () => {
 	canvas = document.getElementById("canvas");
@@ -62,7 +62,7 @@ const canvasClicked = event => {
 					ctx.lineTo(600,300);
 					ctx.lineWidth = 3;
 					ctx.stroke();
-					topWin = true;
+					midHorizWin = true;
 					win = true;
 				}
 			}
