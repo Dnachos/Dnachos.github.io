@@ -45,8 +45,8 @@ const canvasClicked = event => {
 		
 				if (toeField[0][0].wok == toeField[0][1].wok && toeField[0][2].wok) {
 					ctx.beginPath();
-					ctx.moveTo(0, size * n + size / 2);
-					ctx.lineTo(size * complexity, size * n + size / 2);
+					ctx.moveTo(0, 100);
+					ctx.lineTo(600,100);
 					ctx.lineWidth = 3;
 					ctx.stroke();
 					topWin = true;
