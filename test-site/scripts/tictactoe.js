@@ -115,7 +115,7 @@ const canvasClicked = event => {
 		
 		
 		for (let n = 0; n < complexity; n++) {
-				if (toeField[1][0].wok == toeField[1][1].wok && toeField[1][2].wok) {
+				if (toeField[2][0].wok == toeField[2][1].wok && toeField[2][2].wok) {
 					ctx.beginPath();
 					ctx.moveTo(500, 0);
 					ctx.lineTo(500,600);
