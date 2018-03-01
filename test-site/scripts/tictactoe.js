@@ -114,7 +114,7 @@ if (turn == 9 && win == false) {
 				}
 				
 				
-				if (topWin == true) {
+				if (botWin == true) {
 					ctx.beginPath();
 					ctx.moveTo(0, 500);
 					ctx.lineTo(600, 500);
