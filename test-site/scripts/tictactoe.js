@@ -42,7 +42,7 @@ const canvasClicked = event => {
 		toeField[x][y].wok = turn % 2 + 1;
 		draw();
 		turn++;
-			for(1==1) {
+			for (let n = 0; n < complexity; n++) {
 				if (toeField[0][0].wok == toeField[0][1].wok && toeField[0][2].wok) {
 					ctx.beginPath();
 					ctx.moveTo(0, 100);
