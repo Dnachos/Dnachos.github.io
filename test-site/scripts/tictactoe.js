@@ -109,8 +109,8 @@ if (turn == 9 && win ==false) {
 					ctx.lineTo(600, 100);
 					ctx.lineWidth = 3;
 					ctx.stroke();
-				}
-			}
+				33)}
+			
 				
 			MLG.volume = 1;
 			MLG.addEventListener("ended", function() {
