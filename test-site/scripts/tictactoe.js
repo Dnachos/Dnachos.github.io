@@ -106,22 +106,10 @@ if (turn == 9 && win ==false) {
 				if (topWin == true) {
 					ctx.beginPath();
 					ctx.moveTo(0, 100);
-					ctx.lineTo(size * complexity, 100);
+					ctx.lineTo(600, 100);
 					ctx.lineWidth = 3;
 					ctx.stroke();
 				}
-				
-				
-				if (leftVertWin == true) {
-				   ctx.beginPath();
-					ctx.moveTo(size * n + size / 2, 0);
-					ctx.lineTo(size * n + size / 2, size * complexity);
-					ctx.lineWidth = 3;
-					ctx.stroke();
-				   }
-				
-				
-			}, 33);
 			
 				
 			MLG.volume = 1;
