@@ -17,6 +17,8 @@ let toeField;
 let topWin = false;
 let midHorizWin = false;
 let botWin = false;
+let leftVertWin = false;
+
 
 document.addEventListener("DOMContentLoaded", () => {
 	canvas = document.getElementById("canvas");
@@ -82,6 +84,20 @@ const canvasClicked = event => {
 			}
 		
 		
+		for (let n = 0; n < complexity; n++) {
+				if (toeField[0][0].wok == toeField[1][0].wok && toeField[2][0].wok) {
+					ctx.beginPath();
+					ctx.moveTo(0, 500);
+					ctx.lineTo(600,500);
+					ctx.lineWidth = 3;
+					ctx.stroke();
+					leftVertWin = true;
+					win = true;
+				}
+			}
+		
+		
+		
 if (turn == 9 && win == false) {
 	window.setTimeout(  
     function() {  
@@ -118,6 +134,15 @@ if (turn == 9 && win == false) {
 					ctx.beginPath();
 					ctx.moveTo(0, 500);
 					ctx.lineTo(600, 500);
+					ctx.lineWidth = 3;
+					ctx.stroke();
+				}
+				
+				
+				if (leftVertWin == true) {
+					ctx.beginPath();
+					ctx.moveTo(100, 0);
+					ctx.lineTo(100, 600);
 					ctx.lineWidth = 3;
 					ctx.stroke();
 				}
