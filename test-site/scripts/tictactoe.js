@@ -42,9 +42,8 @@ const canvasClicked = event => {
 		toeField[x][y].wok = turn % 2 + 1;
 		draw();
 		turn++;
-		for (let n = 0; n < complexity; n++) {
-			if (toeField[0][n].wok != 0) {
-				if (toeField[0][n].wok == toeField[1][n].wok && toeField[1][n].wok == toeField[2][n].wok) {
+		
+				if (toeField[0][0].wok == toeField[0][1].wok && toeField[0][2].wok) {
 					ctx.beginPath();
 					ctx.moveTo(0, size * n + size / 2);
 					ctx.lineTo(size * complexity, size * n + size / 2);
@@ -53,8 +52,8 @@ const canvasClicked = event => {
 					topWin = true;
 					win = true;
 				}
-			}
-		}
+			
+		
 		for (let n = 0; n < complexity; n++) {
 			if (toeField[n][0].wok != 0) {
 				if (toeField[n][0].wok == toeField[n][1].wok && toeField[n][1].wok == toeField[n][2].wok) {
