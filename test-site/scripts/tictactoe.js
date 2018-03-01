@@ -72,8 +72,8 @@ const canvasClicked = event => {
 		for (let n = 0; n < complexity; n++) {
 				if (toeField[0][2].wok == toeField[1][2].wok && toeField[2][2].wok) {
 					ctx.beginPath();
-					ctx.moveTo(0, 100);
-					ctx.lineTo(600,100);
+					ctx.moveTo(0, 500);
+					ctx.lineTo(600,500);
 					ctx.lineWidth = 3;
 					ctx.stroke();
 					botWin = true;
@@ -82,7 +82,7 @@ const canvasClicked = event => {
 			}
 		
 		
-if (turn == 9 && win ==false) {
+if (turn == 9 && win == false) {
 	window.setTimeout(  
     function() {  
         location.reload(); 
