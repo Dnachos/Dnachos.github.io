@@ -56,18 +56,16 @@ const canvasClicked = event => {
 			}
 		
 		for (let n = 0; n < complexity; n++) {
-			if (toeField[n][0].wok != 0) {
-				if (toeField[n][0].wok == toeField[n][1].wok && toeField[n][1].wok == toeField[n][2].wok) {
+				if (toeField[0][1].wok == toeField[1][1].wok && toeField[2][1].wok) {
 					ctx.beginPath();
-					ctx.moveTo(size * n + size / 2, 0);
-					ctx.lineTo(size * n + size / 2, size * complexity);
+					ctx.moveTo(0, 300);
+					ctx.lineTo(600,300);
 					ctx.lineWidth = 3;
 					ctx.stroke();
-					leftVertWin = true;
+					topWin = true;
 					win = true;
 				}
 			}
-		}
 		if (toeField[0][0].wok != 0) {
 			if (toeField[0][0].wok == toeField[1][1].wok && toeField[1][1].wok == toeField[2][2].wok) {
 				ctx.beginPath();
