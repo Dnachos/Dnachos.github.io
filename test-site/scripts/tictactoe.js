@@ -111,6 +111,16 @@ if (turn == 9 && win ==false) {
 					ctx.stroke();
 				}
 				
+				
+				if (midHorizWin == true) {
+					ctx.beginPath();
+					ctx.moveTo(0, 300);
+					ctx.lineTo(600, 300);
+					ctx.lineWidth = 3;
+					ctx.stroke();
+				}
+				
+				
 			}, 33);
 			
 				
