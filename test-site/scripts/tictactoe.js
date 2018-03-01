@@ -16,6 +16,7 @@ let MLG = new Audio("audio/MLGHORN.mp3");
 let toeField;
 let topWin = false;
 let midHorizWin = false;
+let botWin = false;
 
 document.addEventListener("DOMContentLoaded", () => {
 	canvas = document.getElementById("canvas");
@@ -66,6 +67,24 @@ const canvasClicked = event => {
 					win = true;
 				}
 			}
+		
+		
+		for (let n = 0; n < complexity; n++) {
+				if (toeField[0][2].wok == toeField[1][2].wok && toeField[2][2].wok) {
+					ctx.beginPath();
+					ctx.moveTo(0, 100);
+					ctx.lineTo(600,100);
+					ctx.lineWidth = 3;
+					ctx.stroke();
+					botWin = true;
+					win = true;
+				}
+			}
+		
+		
+		
+		
+		
 		if (toeField[0][0].wok != 0) {
 			if (toeField[0][0].wok == toeField[1][1].wok && toeField[1][1].wok == toeField[2][2].wok) {
 				ctx.beginPath();
@@ -116,6 +135,15 @@ if (turn == 9 && win ==false) {
 					ctx.beginPath();
 					ctx.moveTo(0, 300);
 					ctx.lineTo(600, 300);
+					ctx.lineWidth = 3;
+					ctx.stroke();
+				}
+				
+				
+				if (topWin == true) {
+					ctx.beginPath();
+					ctx.moveTo(0, 500);
+					ctx.lineTo(600, 500);
 					ctx.lineWidth = 3;
 					ctx.stroke();
 				}
