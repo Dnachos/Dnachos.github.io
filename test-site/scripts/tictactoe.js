@@ -82,32 +82,6 @@ const canvasClicked = event => {
 			}
 		
 		
-		
-		
-		
-		if (toeField[0][0].wok != 0) {
-			if (toeField[0][0].wok == toeField[1][1].wok && toeField[1][1].wok == toeField[2][2].wok) {
-				ctx.beginPath();
-				ctx.moveTo(0, 0);
-				ctx.lineTo(size * complexity, size * complexity);
-				ctx.lineWidth = 3;
-				ctx.stroke();
-				win = true;
-			}
-		}
-		if (toeField[2][0].wok != 0) {
-			if (toeField[2][0].wok == toeField[1][1].wok && toeField[1][1].wok == toeField[0][2].wok) {
-				ctx.beginPath();
-				ctx.moveTo(size * complexity, 0);
-				ctx.lineTo(0, size * complexity);
-				ctx.lineWidth = 3;
-				ctx.stroke();
-				win = true;
-			}
-		}
-		
-		
-		
 if (turn == 9 && win ==false) {
 	window.setTimeout(  
     function() {  
