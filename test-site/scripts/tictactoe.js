@@ -51,14 +51,16 @@ const canvasClicked = event => {
 		
 		
 			for (let n = 0; n < complexity; n++) {
-				if (toeField[0][0].wok != 0 && toeField[0][0].wok == toeField[1][0].wok && toeField[2][0].wok == toeField[0][0].wok) {
-					ctx.beginPath();
-					ctx.moveTo(0, 100);
-					ctx.lineTo(600,100);
-					ctx.lineWidth = 3;
-					ctx.stroke();
-					topWin = true;
-					win = true;
+				if (toeField[0][0].wok != 0 && toeField[1][0].wok !=0 && toeField[2][0].wok != 0){
+					if (toeField[0][0].wok == toeField[1][0].wok && toeField[2][0].wok == toeField[0][0].wok) {
+						ctx.beginPath();
+						ctx.moveTo(0, 100);
+						ctx.lineTo(600,100);
+						ctx.lineWidth = 3;
+						ctx.stroke();
+						topWin = true;
+						win = true;
+					}
 				}
 			}
 		
