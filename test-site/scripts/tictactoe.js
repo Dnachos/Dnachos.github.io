@@ -126,6 +126,19 @@ const canvasClicked = event => {
 			}
 		
 		
+		if (toeField[2][0].wok !=0 && toeField[2][1].wok !=0 && toeField[2][2].wok !=0) {
+				if (toeField[2][0].wok == toeField[2][1].wok && toeField[2][2].wok == toeField[2][0].wok) {
+					ctx.beginPath();
+					ctx.moveTo(500, 0);
+					ctx.lineTo(500,600);
+					ctx.lineWidth = 3;
+					ctx.stroke();
+					rightVertWin = true;
+					win = true;
+				}
+			}
+		
+		
 	
 			if (toeField[0][0].wok !=0 && toeField[1][1].wok !=0 && toeField[2][2].wok !=0) {
 				if (toeField[0][0].wok == toeField[1][1].wok && toeField[2][2].wok == toeField[0][0].wok) {
