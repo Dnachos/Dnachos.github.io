@@ -50,7 +50,7 @@ const canvasClicked = event => {
 		turn++;
 		
 		
-			for (let n = 0; n < complexity; n++) {
+		
 				if (toeField[0][0].wok !=0 && toeField[1][0].wok !=0 && toeField[2][0].wok !=0){
 					if (toeField[0][0].wok == toeField[1][0].wok && toeField[2][0].wok == toeField[0][0].wok) {
 						ctx.beginPath();
@@ -62,10 +62,10 @@ const canvasClicked = event => {
 						win = true;
 					}
 				}
-			}
+			
 		
 		
-			for (let n = 0; n < complexity; n++) {
+		
 				if (toeField[0][1].wok !=0 && toeField[1][1].wok !=0 && toeField[2][1].wok !=0) {
 					if (toeField[0][1].wok == toeField[1][1].wok && toeField[2][1].wok == toeField[0][1].wok) {
 						ctx.beginPath();
@@ -77,10 +77,10 @@ const canvasClicked = event => {
 						win = true;
 					}
 				}
-			}
+			
 		
 	
-		for (let n = 0; n < complexity; n++) {
+	
 			if (toeField[0][2].wok !=0 && toeField[1][2].wok !=0 && toeField[2][2].wok !=0) {
 				if (toeField[0][2].wok == toeField[1][2].wok && toeField[2][2].wok == toeField[0][2].wok) {
 					ctx.beginPath();
@@ -92,10 +92,10 @@ const canvasClicked = event => {
 					win = true;
 				}
 			}
-		}
+		
 		
 	
-		for (let n = 0; n < complexity; n++) {
+		
 			if (toeField[0][0].wok !=0 && toeField[0][1].wok !=0 && toeField[0][2].wok !=0) {
 				if (toeField[0][0].wok == toeField[0][1].wok && toeField[0][2].wok == toeField[0][0].wok) {
 					ctx.beginPath();
@@ -107,10 +107,10 @@ const canvasClicked = event => {
 					win = true;
 				}
 			}
-		}
+		
 		
 	
-		for (let n = 0; n < complexity; n++) {
+		
 			if (toeField[1][0].wok !=0 && toeField[1][1].wok !=0 && toeField[1][2].wok !=0) {
 				if (toeField[1][0].wok == toeField[1][1].wok && toeField[1][2].wok == toeField[1][0].wok) {
 					ctx.beginPath();
@@ -122,10 +122,9 @@ const canvasClicked = event => {
 					win = true;
 				}
 			}
-		}
+		
 		
 	
-		for (let n = 0; n < complexity; n++) {
 			if (toeField[2][0].wok !=0 && toeField[2][1].wok !=0 && toeField[2][2].wok !=0) {
 				if (toeField[2][0].wok == toeField[2][1].wok && toeField[2][2].wok == toeField[2][0].wok) {
 					ctx.beginPath();
@@ -137,9 +136,10 @@ const canvasClicked = event => {
 					win = true;
 				}
 			}
-		}
+		
 
 
+		
 		
 		
 		
