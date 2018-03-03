@@ -51,7 +51,7 @@ const canvasClicked = event => {
 		
 		
 			for (let n = 0; n < complexity; n++) {
-				if (toeField[0][0].wok != 0 && toeField[1][0].wok !=0 && toeField[2][0].wok != 0){
+				if (toeField[0][0].wok !=0 && toeField[1][0].wok !=0 && toeField[2][0].wok !=0){
 					if (toeField[0][0].wok == toeField[1][0].wok && toeField[2][0].wok == toeField[0][0].wok) {
 						ctx.beginPath();
 						ctx.moveTo(0, 100);
@@ -64,20 +64,22 @@ const canvasClicked = event => {
 				}
 			}
 		
-	/*
-		for (let n = 0; n < complexity; n++) {
-				if (toeField[0][1].wok == toeField[1][1].wok && toeField[2][1].wok == toeField[0][1].wok) {
-					ctx.beginPath();
-					ctx.moveTo(0, 300);
-					ctx.lineTo(600,300);
-					ctx.lineWidth = 3;
-					ctx.stroke();
-					midHorizWin = true;
-					win = true;
+		
+			for (let n = 0; n < complexity; n++) {
+				if (toeField[0][1].wok !=0 && toeField[1][1].wok !=0 && toeField[2][1].wok !=0) {
+					if (toeField[0][1].wok == toeField[1][1].wok && toeField[2][1].wok == toeField[0][1].wok) {
+						ctx.beginPath();
+						ctx.moveTo(0, 300);
+						ctx.lineTo(600,300);
+						ctx.lineWidth = 3;
+						ctx.stroke();
+						midHorizWin = true;
+						win = true;
+					}
 				}
 			}
 		
-		
+	/*
 		for (let n = 0; n < complexity; n++) {
 				if (toeField[0][2].wok == toeField[1][2].wok && toeField[2][2].wok == toeField[0][2].wok) {
 					ctx.beginPath();
