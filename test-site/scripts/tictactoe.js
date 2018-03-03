@@ -79,8 +79,9 @@ const canvasClicked = event => {
 				}
 			}
 		
-	/*
+	
 		for (let n = 0; n < complexity; n++) {
+			if (toeField[0][2].wok !=0 && toeField[1][2].wok !=0 && toeField[2][2].wok !=0) {
 				if (toeField[0][2].wok == toeField[1][2].wok && toeField[2][2].wok == toeField[0][2].wok) {
 					ctx.beginPath();
 					ctx.moveTo(0, 500);
@@ -91,8 +92,9 @@ const canvasClicked = event => {
 					win = true;
 				}
 			}
+		}
 		
-		
+	/*
 		for (let n = 0; n < complexity; n++) {
 				if (toeField[0][0].wok == toeField[0][1].wok && toeField[0][2].wok == toeField[0][0].wok) {
 					ctx.beginPath();
