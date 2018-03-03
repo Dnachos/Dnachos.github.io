@@ -64,6 +64,7 @@ const canvasClicked = event => {
 				}
 			}
 		
+	/*
 		for (let n = 0; n < complexity; n++) {
 				if (toeField[0][1].wok == toeField[1][1].wok && toeField[2][1].wok == toeField[0][1].wok) {
 					ctx.beginPath();
@@ -128,7 +129,7 @@ const canvasClicked = event => {
 				}
 			}
 		
-		
+	*/	
 		
 		
 		
@@ -137,7 +138,7 @@ if (turn == 9 && win == false) {
     function() {  
         location.reload(); 
     	},  
-    1.5*1000);
+    2*1000);
 }
 
 		
