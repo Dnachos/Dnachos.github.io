@@ -140,7 +140,17 @@ const canvasClicked = event => {
 			}
 		
 
-			
+			if (toeField[2][0].wok !=0 && toeField[1][1].wok !=0 && toeField[0][2].wok !=0) {
+				if (toeField[2][0].wok == toeField[1][1].wok && toeField[0][2].wok == toeField[2][0].wok) {
+					ctx.beginPath();
+					ctx.moveTo(600, 0);
+					ctx.lineTo(0, 600);
+					ctx.lineWidth = 3;
+					ctx.stroke();
+					rightDiagWin = true;
+					win = true;
+				}
+			}
 		
 		
 		
@@ -158,6 +168,7 @@ if (turn == 9 && win == false) {
 		if (win == true) {
 			setInterval(function() {
 				draw("hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)");
+				
 				
 				if (topWin == true) {
 					ctx.beginPath();
@@ -186,6 +197,7 @@ if (turn == 9 && win == false) {
 				}
 				
 				
+				
 				if (leftVertWin == true) {
 					ctx.beginPath();
 					ctx.moveTo(100, 0);
@@ -193,6 +205,7 @@ if (turn == 9 && win == false) {
 					ctx.lineWidth = 3;
 					ctx.stroke();
 				}
+				
 				
 				if (midVertWin == true) {
 					ctx.beginPath();
@@ -202,6 +215,7 @@ if (turn == 9 && win == false) {
 					ctx.stroke();
 				}
 				
+				
 			if (rightVertWin == true) {
 					ctx.beginPath();
 					ctx.moveTo(500, 0);
@@ -210,6 +224,7 @@ if (turn == 9 && win == false) {
 					ctx.stroke();
 				}
 					
+				
 				if (leftDiagWin == true) {
 					ctx.beginPath();
 					ctx.moveTo(0, 0);
@@ -219,7 +234,13 @@ if (turn == 9 && win == false) {
 				}
 				
 				
-				
+				if (rightDiagWin == true) {
+					ctx.beginPath();
+					ctx.moveTo(600, 0);
+					ctx.lineTo(0, 600);
+					ctx.lineWidth = 3;
+					ctx.stroke();
+				}
 				
 				
 			}, 33);
