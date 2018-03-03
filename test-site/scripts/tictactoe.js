@@ -51,7 +51,7 @@ const canvasClicked = event => {
 		
 		
 			for (let n = 0; n < complexity; n++) {
-				if (toeField[0][0].wok == toeField[1][0].wok && toeField[2][0].wok == toeField[1][0].wok) {
+				if (toeField[0][0].wok == toeField[1][0].wok && toeField[2][0].wok == toeField[0][0].wok) {
 					ctx.beginPath();
 					ctx.moveTo(0, 100);
 					ctx.lineTo(600,100);
@@ -63,7 +63,7 @@ const canvasClicked = event => {
 			}
 		
 		for (let n = 0; n < complexity; n++) {
-				if (toeField[0][1].wok == toeField[1][1].wok && toeField[2][1].wok == toeField[1][1].wok) {
+				if (toeField[0][1].wok == toeField[1][1].wok && toeField[2][1].wok == toeField[0][1].wok) {
 					ctx.beginPath();
 					ctx.moveTo(0, 300);
 					ctx.lineTo(600,300);
@@ -76,7 +76,7 @@ const canvasClicked = event => {
 		
 		
 		for (let n = 0; n < complexity; n++) {
-				if (toeField[0][2].wok == toeField[1][2].wok && toeField[2][2].wok == toeField[1][2].wok) {
+				if (toeField[0][2].wok == toeField[1][2].wok && toeField[2][2].wok == toeField[0][2].wok) {
 					ctx.beginPath();
 					ctx.moveTo(0, 500);
 					ctx.lineTo(600,500);
@@ -89,7 +89,7 @@ const canvasClicked = event => {
 		
 		
 		for (let n = 0; n < complexity; n++) {
-				if (toeField[0][0].wok == toeField[0][1].wok && toeField[0][2].wok == toeField[0][1].wok) {
+				if (toeField[0][0].wok == toeField[0][1].wok && toeField[0][2].wok == toeField[0][0].wok) {
 					ctx.beginPath();
 					ctx.moveTo(100, 0);
 					ctx.lineTo(100,600);
@@ -102,7 +102,7 @@ const canvasClicked = event => {
 		
 		
 		for (let n = 0; n < complexity; n++) {
-				if (toeField[1][0].wok == toeField[1][1].wok && toeField[1][2].wok == toeField[1][1].wok) {
+				if (toeField[1][0].wok == toeField[1][1].wok && toeField[1][2].wok == toeField[1][0].wok) {
 					ctx.beginPath();
 					ctx.moveTo(300, 0);
 					ctx.lineTo(300,600);
@@ -115,7 +115,7 @@ const canvasClicked = event => {
 		
 		
 		for (let n = 0; n < complexity; n++) {
-				if (toeField[2][0].wok == toeField[2][1].wok && toeField[2][2].wok == toeField[2][1].wok) {
+				if (toeField[2][0].wok == toeField[2][1].wok && toeField[2][2].wok == toeField[2][0].wok) {
 					ctx.beginPath();
 					ctx.moveTo(500, 0);
 					ctx.lineTo(500,600);
