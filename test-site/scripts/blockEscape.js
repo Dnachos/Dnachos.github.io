@@ -170,7 +170,7 @@ const begin = () => {
 	}, 33);
 
 	
-	let button = canvas.createElement("button");
+	let button = document.canvas.createElement("button");
 				button.style.width = "150px";
 				button.style.height = "50px";
 				button.style.position = "absolute";
