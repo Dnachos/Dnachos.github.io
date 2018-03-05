@@ -170,7 +170,7 @@ const begin = () => {
 	}, 33);
 
 	
-	let button = document.createElement("button");
+	let button = canvas.createElement("button");
 				button.style.width = "150px";
 				button.style.height = "50px";
 				button.style.position = "absolute";
@@ -181,7 +181,7 @@ const begin = () => {
 				button.addEventListener("click", function() {
 					classic();
 				});
-
 	
+//document.body.appendChild(button);	
 	
 };
