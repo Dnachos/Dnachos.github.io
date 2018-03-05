@@ -148,6 +148,8 @@ let canvas;
 let ctx;
 let tickNumber = 0;
 let field;
+let buttonClicked = false;
+
 
 const begin = () => {
 	canvas = document.getElementById("canvas");
@@ -169,19 +171,13 @@ const begin = () => {
 		ctx.fillText("Classic", 300, 180);
 	}, 33);
 
+	if (buttonClicked = false) {
+		if (clientX > 225 && clientX < 275 && clientY > 150 && clientY < 200){
+			classic();
+		}
+			
+			
+	}
 	
-	let button = document.createElement("button");
-				button.style.width = "150px";
-				button.style.height = "50px";
-				button.style.position = "absolute";
-				button.style.left = "225px";
-				button.style.top = "150px";
-				button.style.padding = "0px";
-				button.style.border = "0px";
-				button.addEventListener("click", function() {
-					classic();
-				});
-	
-//document.body.appendChild(button);	
 	
 };
