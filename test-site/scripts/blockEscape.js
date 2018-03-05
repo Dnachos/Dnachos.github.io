@@ -169,16 +169,20 @@ const begin = () => {
 		ctx.fillText("Classic", 300, 180);
 	}, 33);
 
-	canvas.addEventListener("click", () => {
-		classButton();
-	});
+	
+	let button = document.createElement("button");
+				button.style.width = "150px";
+				button.style.height = "50px";
+				button.style.position = "absolute";
+				button.style.left = "225px";
+				button.style.top = "150px";
+				button.style.padding = "0px";
+				button.style.border = "0px";
+				button.addEventListener("click", function() {
+					classic();
+				});
 
-
-function classButton () {
-	if(1==1){
-	classic();
-	}
-
+	
 
 }
 
