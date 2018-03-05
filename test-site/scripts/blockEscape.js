@@ -172,7 +172,8 @@ const begin = () => {
 	}, 33);
 
 	if (buttonClicked = false) {
-		if (clientX > 225 && clientX < 275 && clientY > 150 && clientY < 200){
+		if (clientX > 225 && clientX < 375 && clientY > 150 && clientY < 200){
+			buttonClicked = true;
 			classic();
 		}
 	}
