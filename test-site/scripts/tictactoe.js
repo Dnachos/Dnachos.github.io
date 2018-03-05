@@ -5,7 +5,7 @@ CanvasRenderingContext2D.prototype.circle = function(_x, _y, _r) {
 	this.arc(_x, _y, _r, 0, 2 * Math.PI);
 };
 
-let lW = 4;
+let lW = 5;
 let turn = 0;
 let size = 200;
 let complexity = 3;
