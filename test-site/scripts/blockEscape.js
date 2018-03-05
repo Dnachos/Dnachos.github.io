@@ -175,8 +175,6 @@ const begin = () => {
 		if (clientX > 225 && clientX < 275 && clientY > 150 && clientY < 200){
 			classic();
 		}
-			
-			
 	}
 	
 	
