@@ -5,7 +5,7 @@ CanvasRenderingContext2D.prototype.circle = function(_x, _y, _r) {
 	this.arc(_x, _y, _r, 0, 2 * Math.PI);
 };
 
-let n;
+let lW = 4;
 let turn = 0;
 let size = 200;
 let complexity = 3;
@@ -58,7 +58,7 @@ const canvasClicked = event => {
 						ctx.beginPath();
 						ctx.moveTo(0, 100);
 						ctx.lineTo(600,100);
-						ctx.lineWidth = 3;
+						ctx.lineWidth = lW;
 						ctx.stroke();
 						topWin = true;
 						win = true;
@@ -73,7 +73,7 @@ const canvasClicked = event => {
 						ctx.beginPath();
 						ctx.moveTo(0, 300);
 						ctx.lineTo(600,300);
-						ctx.lineWidth = 3;
+						ctx.lineWidth = lW;
 						ctx.stroke();
 						midHorizWin = true;
 						win = true;
@@ -88,7 +88,7 @@ const canvasClicked = event => {
 					ctx.beginPath();
 					ctx.moveTo(0, 500);
 					ctx.lineTo(600,500);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 					botWin = true;
 					win = true;
@@ -103,7 +103,7 @@ const canvasClicked = event => {
 					ctx.beginPath();
 					ctx.moveTo(100, 0);
 					ctx.lineTo(100,600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 					leftVertWin = true;
 					win = true;
@@ -118,7 +118,7 @@ const canvasClicked = event => {
 					ctx.beginPath();
 					ctx.moveTo(300, 0);
 					ctx.lineTo(300,600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 					midVertWin = true;
 					win = true;
@@ -131,7 +131,7 @@ const canvasClicked = event => {
 					ctx.beginPath();
 					ctx.moveTo(500, 0);
 					ctx.lineTo(500,600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 					rightVertWin = true;
 					win = true;
@@ -145,7 +145,7 @@ const canvasClicked = event => {
 					ctx.beginPath();
 					ctx.moveTo(0, 0);
 					ctx.lineTo(600, 600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 					leftDiagWin = true;
 					win = true;
@@ -158,7 +158,7 @@ const canvasClicked = event => {
 					ctx.beginPath();
 					ctx.moveTo(600, 0);
 					ctx.lineTo(0, 600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 					rightDiagWin = true;
 					win = true;
@@ -187,7 +187,7 @@ if (turn == 9 && win == false) {
 					ctx.beginPath();
 					ctx.moveTo(0, 100);
 					ctx.lineTo(600, 100);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 				}
 				
@@ -196,7 +196,7 @@ if (turn == 9 && win == false) {
 					ctx.beginPath();
 					ctx.moveTo(0, 300);
 					ctx.lineTo(600, 300);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 				}
 				
@@ -205,7 +205,7 @@ if (turn == 9 && win == false) {
 					ctx.beginPath();
 					ctx.moveTo(0, 500);
 					ctx.lineTo(600, 500);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 				}
 				
@@ -215,7 +215,7 @@ if (turn == 9 && win == false) {
 					ctx.beginPath();
 					ctx.moveTo(100, 0);
 					ctx.lineTo(100, 600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 				}
 				
@@ -224,7 +224,7 @@ if (turn == 9 && win == false) {
 					ctx.beginPath();
 					ctx.moveTo(300, 0);
 					ctx.lineTo(300, 600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 				}
 				
@@ -233,7 +233,7 @@ if (turn == 9 && win == false) {
 					ctx.beginPath();
 					ctx.moveTo(500, 0);
 					ctx.lineTo(500, 600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 				}
 					
@@ -242,7 +242,7 @@ if (turn == 9 && win == false) {
 					ctx.beginPath();
 					ctx.moveTo(0, 0);
 					ctx.lineTo(600, 600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 				}
 				
@@ -251,7 +251,7 @@ if (turn == 9 && win == false) {
 					ctx.beginPath();
 					ctx.moveTo(600, 0);
 					ctx.lineTo(0, 600);
-					ctx.lineWidth = 3;
+					ctx.lineWidth = lW;
 					ctx.stroke();
 				}
 				
