@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const imageClicked = () => {
 	if (myImage.src.includes("images/apple.jpg")) {
-		alert("NOOOOOO!!!!!");
+		alert("*crunch*");
 		myImage.src = "images/appleCore.jpg";
 	} else {
 		myImage.src = "images/apple.jpg";
