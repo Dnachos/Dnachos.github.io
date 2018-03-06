@@ -176,7 +176,7 @@ const begin = () => {
 		console.log("test1");
 		if (buttonClicked == false) {
 			console.log("test2");
-			if (event.clientX > 225 && event.clientX < 375 && event.clientY > 150 && event.clientY < 200) {
+			if (mouseEvent.clientX > 225 && mouseEvent.clientX < 375 && mouseEvent.clientY > 150 && mouseEvent.clientY < 200) {
 				console.log("test3");
 				buttonClicked = true;
 				classic();
