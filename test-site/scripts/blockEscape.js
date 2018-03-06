@@ -148,6 +148,7 @@ let canvas;
 let ctx;
 let tickNumber = 0;
 let field;
+let buttonClicked = false;
 
 
 const begin = () => {
@@ -171,7 +172,17 @@ const begin = () => {
 	}, 33);
 
 	
+	canvas.addEventListener("click", () => {
+		if (buttonClicked = false) {
+			if (clientX > 225 && clientX < 375 && clientY > 150 && clientY < 200){
+				buttonClicked = true;
+				classic();
+			}
+		}
+	});
 	
+	
+
 	
 	
 };
