@@ -14,6 +14,7 @@ class Vector {
 		this.y = y;
 	}
 }
+
 class Piece extends Vector {
 	constructor(_x, _y, _size, _solids) {
 		super(_x, _y);
