@@ -148,6 +148,8 @@ let canvas;
 let ctx;
 let tickNumber = 0;
 let field;
+let x = event.clientX;
+let y = event.clientY;
 let buttonClicked = false;
 
 
@@ -176,7 +178,7 @@ const begin = () => {
 		console.log("test1");
 		if (buttonClicked == false) {
 			console.log("test2");
-			if (mouseEvent.clientX > 225 && mouseEvent.clientX < 375 && mouseEvent.clientY > 150 && mouseEvent.clientY < 200) {
+			if (x > 225 && x < 375 && y > 150 && y < 200) {
 				console.log("test3");
 				buttonClicked = true;
 				classic();
