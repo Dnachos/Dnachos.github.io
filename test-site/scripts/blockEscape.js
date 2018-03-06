@@ -174,7 +174,7 @@ const begin = () => {
 	
 	canvas.addEventListener("click", () => {
 		if (buttonClicked = false) {
-			if (clientX > 225 && clientX < 375 && clientY > 150 && clientY < 200){
+			if (event.clientX > 225 && event.clientX < 375 && event.clientY > 150 && event.clientY < 200) {
 				buttonClicked = true;
 				classic();
 			}
