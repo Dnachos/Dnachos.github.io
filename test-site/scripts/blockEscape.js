@@ -150,7 +150,8 @@ let ctx;
 let tickNumber = 0;
 let field;
 let buttonClicked = false;
-
+let x = event.clientX - event.offsetX;
+let y = event.clientY - event.offsetY;
 
 const begin = () => {
 	canvas = document.getElementById("canvas");
