@@ -163,10 +163,6 @@ const begin = () => {
 	ctx.fillStyle = "rgb(0,0,0)";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 	setInterval(() => {
-		ctx.beginPath();
-		ctx.strokeStyle = "white";
-		ctx.rect(225,150,150,50);
-		ctx.stroke();
 		ctx.fillStyle = `hsl(${Date.now() / .75e4 * 360 % 360}, 100%, 50%)`;
 		ctx.font = "45px Crayon";
 		ctx.textBaseline = "middle";
