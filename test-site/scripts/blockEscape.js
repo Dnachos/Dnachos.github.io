@@ -185,6 +185,10 @@ const begin = () => {
 				buttonClicked = true;
 				classic();
 			}
+			if (x >20 && x < 400 && y > 250 && y < 300) {
+				buttonClicked == true;
+				classic();
+			}
 		}
 	});
 	
