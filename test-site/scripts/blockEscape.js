@@ -166,13 +166,14 @@ const begin = () => {
 		ctx.beginPath();
 		ctx.strokeStyle = "white";
 		ctx.rect(225,150,150,50);
+		ctx.rect(225,200,150,50);
 		ctx.stroke();
 		ctx.fillStyle = `hsl(${Date.now() / .75e4 * 360 % 360}, 100%, 50%)`;
 		ctx.font = "45px Crayon";
 		ctx.textBaseline = "middle";
 		ctx.textAlign = "center";
 		ctx.fillText("Classic", 300, 180);
-		ctx.fillText("Two Player", 300, 250);
+		ctx.fillText("Two Player", 300, 230);
 	}, 33);
 
 	
