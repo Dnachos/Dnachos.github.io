@@ -168,6 +168,7 @@ const begin = () => {
 		ctx.textBaseline = "middle";
 		ctx.textAlign = "center";
 		ctx.fillText("Classic", 300, 180);
+		ctx.fillText("Two Player", 300, 250);
 	}, 33);
 
 	
