@@ -49,9 +49,9 @@ class Piece extends Vector {
 	}
 }
 
-const cols = 30;
-const rows = 30;
-const size = 40;
+const cols = 25;
+const rows = 25;
+const size = 35;
 const gravity = new Vector(0, 0.1);
 const shapes = [
 	[
