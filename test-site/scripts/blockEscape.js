@@ -181,11 +181,11 @@ const begin = () => {
              let x = event.offsetX;
              let y = event.offsetY;
 		if (buttonClicked == false) {
-			if (x > 225 && x < 375 && y > 150 && y < 200) {
+			if (x > 250 && x < 400 && y > 150 && y < 200) {
 				buttonClicked = true;
 				classic();
 			}
-			if (x >200 && x < 400 && y > 250 && y < 300) {
+			if (x >225 && x < 425 && y > 250 && y < 300) {
 				buttonClicked == true;
 				classic();
 			}
