@@ -49,7 +49,7 @@ class Piece extends Vector {
 	}
 }
 
-const cols = 25;
+const cols = 20;
 const rows = 25;
 const size = 35;
 const gravity = new Vector(0, 0.1);
