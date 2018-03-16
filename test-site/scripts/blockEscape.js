@@ -165,15 +165,15 @@ const begin = () => {
 	setInterval(() => {
 		ctx.beginPath();
 		ctx.strokeStyle = "white";
-		ctx.rect(225,150,150,50);
-		ctx.rect(200,250,200,50);
+		ctx.rect(275,150,150,50);
+		ctx.rect(250,250,200,50);
 		ctx.stroke();
 		ctx.fillStyle = `hsl(${Date.now() / .75e4 * 360 % 360}, 100%, 50%)`;
 		ctx.font = "45px Crayon";
 		ctx.textBaseline = "middle";
 		ctx.textAlign = "center";
-		ctx.fillText("Classic", 300, 180);
-		ctx.fillText("Two Player", 300, 280);
+		ctx.fillText("Classic", 350, 180);
+		ctx.fillText("Two Player", 350, 280);
 	}, 33);
 
 	
