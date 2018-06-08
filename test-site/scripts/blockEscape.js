@@ -15,6 +15,25 @@ class Vector {
 	}
 }
 
+class Rect extends Vector {
+	constructor(_x, _y, _width, _height) {
+		super(_x, _y);
+		this.width = _width;
+		this.height = _height;
+	}
+}
+
+class Sprite extends Rect {
+	constructor(_x, _y, _width, _height, _color) {
+		super(_x, _y, _width, _height);
+		this.color = _color;
+	}
+	draw(ctx){
+		ctx.fillStyle = this.color;
+		ctx.fillRect(this.x, this.y, this.width, this.height);
+	}
+}
+
 class Piece extends Vector {
 	constructor(_x, _y, _size, _solids) {
 		super(_x, _y);
@@ -133,6 +152,7 @@ const loop = () => {
 			}
 		}
 	}
+	player.draw();
 	tickNumber++;
 	requestAnimationFrame(loop);
 };
@@ -152,6 +172,7 @@ let ctx;
 let tickNumber = 0;
 let field;
 let buttonClicked = false;
+let player = new Rect(100, 100, 20, 30, "rgb(139,69,19)");
 
 
 const begin = () => {
