@@ -152,7 +152,8 @@ const loop = () => {
 			}
 		}
 	}
-	player.draw(ctx);
+	//player.draw(ctx);
+	if (stickman) ctx.drawImage(stickman, 0, 0, 100, 100);
 	tickNumber++;
 	requestAnimationFrame(loop);
 };
@@ -164,7 +165,9 @@ const classic = () => {
 	requestAnimationFrame(loop);
 };
 
-loadSprite("/images/stickmanSprite.png").then(console.log);
+
+let stickman;
+loadSprite("/images/stickmanSprite.png").then(img => stickman = img);
 
 let ent = [];
 let canvas;
