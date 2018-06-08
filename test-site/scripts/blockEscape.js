@@ -172,7 +172,7 @@ let ctx;
 let tickNumber = 0;
 let field;
 let buttonClicked = false;
-let player = new Rect(100, 100, 20, 30, "rgb(139,69,19)");
+let player = new Sprite(100, 100, 20, 30, "rgb(139,69,19)");
 
 
 const begin = () => {
