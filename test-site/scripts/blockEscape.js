@@ -164,7 +164,7 @@ const classic = () => {
 	requestAnimationFrame(loop);
 };
 
-
+loadSprite("/images/stickmanSprite.png").then(console.log);
 
 let ent = [];
 let canvas;
