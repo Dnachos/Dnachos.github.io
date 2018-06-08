@@ -152,7 +152,7 @@ const loop = () => {
 			}
 		}
 	}
-	player.draw();
+	player.draw(ctx);
 	tickNumber++;
 	requestAnimationFrame(loop);
 };
